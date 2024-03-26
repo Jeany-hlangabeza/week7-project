@@ -6,7 +6,7 @@ body {
 .container {
   border: 1px solid rgba(248, 247, 247, 0.2);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: rgba(248, 244, 244, 0.5);
+  background-color: rgba(248, 244, 244, 0.2);
   border-radius: 6px;
   width: fit-content;
   padding: 20px;
@@ -27,7 +27,7 @@ form {
 .submit-btn {
   width: 100px;
   padding: 12px;
-  background-color: rgb(235, 149, 235);
+  background-color: rgb(236, 130, 236);
   border-style: none;
   border-radius: 6px;
   color: whitesmoke;
