@@ -15,17 +15,18 @@
   <body>
     <div class="container">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city..."
             class="search-input"
+            id="search-input"
           />
           <input type="submit" value="search" class="submit-btn" />
         </form>
       </header>
       <main>
-        <h1>Paris</h1>
+        <h1 id="city">Paris</h1>
         <p class="details">
           Tuesday 12:30, scattered rain
           <br />
@@ -45,5 +46,7 @@
         <a href=" #">GitHub</a> and is hosted on <a href=" #">Netlify</a>
       </footer>
     </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
