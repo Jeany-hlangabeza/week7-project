@@ -13,6 +13,9 @@ body {
   margin: 0 auto;
   margin-top: 80px;
 }
+form {
+  padding-bottom: 15px;
+}
 .search-input {
   width: 79%;
   padding: 14px;
@@ -30,4 +33,17 @@ body {
   color: whitesmoke;
   font-size: 17px;
   margin-left: 4px;
+}
+
+main {
+  border-top: 2px solid rgba(153, 142, 142, 0.1);
+}
+
+.Humidity-windspeed {
+  color: rgb(236, 96, 119);
+  font-weight: bold;
+}
+.details {
+  color: rgb(90, 83, 83);
+  font-weight: 500;
 }
