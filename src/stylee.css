@@ -1,6 +1,6 @@
 body {
   background-image: url("https://pub-static.fotor.com/assets/bg/247d99f6-6217-4573-8ade-ce8043170fcd.jpg");
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
   margin-top: 80px;
 }
 form {
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 .search-input {
   width: 79%;
@@ -37,6 +37,7 @@ form {
 
 main {
   border-top: 2px solid rgba(153, 142, 142, 0.1);
+  padding-top: 8px;
 }
 
 .Humidity-windspeed {
@@ -46,4 +47,33 @@ main {
 .details {
   color: rgb(90, 83, 83);
   font-weight: 500;
+  margin-bottom: -20px;
+}
+
+.temperature {
+  position: relative;
+  left: 380px;
+  top: -60px;
+  font-size: 65px;
+  font-weight: bold;
+}
+
+.icon {
+  position: relative;
+  left: 380px;
+  top: -66px;
+  font-size: 34px;
+}
+
+.units {
+  position: relative;
+  left: 375px;
+  top: -95px;
+  font-size: 26px;
+}
+
+footer {
+  border-top: 2px solid rgba(153, 142, 142, 0.1);
+  padding-top: 15px;
+  font-size: 15px;
 }
