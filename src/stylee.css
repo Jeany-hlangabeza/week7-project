@@ -2,12 +2,30 @@ body {
   background-image: url("https://pub-static.fotor.com/assets/bg/247d99f6-6217-4573-8ade-ce8043170fcd.jpg");
 }
 .container {
-  border: 1px solid rgb(209, 205, 205);
+  border: 1px solid rgba(248, 247, 247, 0.2);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: rgba(252, 214, 220, 0.2);
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   width: fit-content;
   padding: 20px;
   margin: 0 auto;
   margin-top: 80px;
+}
+.search-input {
+  width: 79%;
+  padding: 14px;
+  border-style: none;
+  border-radius: 6px;
+  background-color: rgba(153, 142, 142, 0.5);
+  font-size: 14px;
+}
+.submit-btn {
+  width: 100px;
+  padding: 12px;
+  background-color: rgb(235, 149, 235);
+  border-style: none;
+  border-radius: 6px;
+  color: whitesmoke;
+  font-size: 17px;
+  margin-left: 4px;
 }
