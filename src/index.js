@@ -2,7 +2,7 @@ function showTemperature(response) {
   let temperature = document.querySelector("#temperature");
   let humidity = document.querySelector("#Humidity");
   let windSpeed = document.querySelector("#windspeed");
-
+  let description = document.querySelector("#condition");
   console.log(response.data);
 
   let currentTemperature = response.data.temperature.current;
@@ -13,6 +13,7 @@ function showTemperature(response) {
 
   let currentWindSpeed = response.data.wind.speed;
   windSpeed.innerHTML = `${currentWindSpeed}km/h`;
+  description.innerHTML = response.data.condition.description;
 }
 
 function updatedCity(city) {
