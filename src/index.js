@@ -3,6 +3,18 @@ function showTemperature(response) {
   let humidity = document.querySelector("#Humidity");
   let windSpeed = document.querySelector("#windspeed");
   let description = document.querySelector("#condition");
+  let time = document.querySelector("#time-date");
+  let date = new Date(response.data.time * 1000);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
   console.log(response.data);
 
   let currentTemperature = response.data.temperature.current;
@@ -14,6 +26,8 @@ function showTemperature(response) {
   let currentWindSpeed = response.data.wind.speed;
   windSpeed.innerHTML = `${currentWindSpeed}km/h`;
   description.innerHTML = response.data.condition.description;
+
+  time.innerHTML = `${day} ${date.getHours()}:${date.getMinutes()}`;
 }
 
 function updatedCity(city) {
