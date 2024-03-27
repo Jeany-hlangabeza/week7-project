@@ -12,12 +12,14 @@ body {
   background-color: rgba(248, 244, 244, 0.2);
   border-radius: 6px;
   width: fit-content;
-  padding: 20px;
+
+  padding: 15px;
+
   margin: 0 auto;
   margin-top: 80px;
 }
 form {
-  padding-bottom: 18px;
+  padding-bottom: 15px;
 }
 .search-input {
   width: 79%;
@@ -40,7 +42,6 @@ form {
 
 main {
   border-top: 2px solid rgba(153, 142, 142, 0.1);
-  padding-top: 8px;
 }
 
 .Humidity-windspeed {
@@ -77,6 +78,7 @@ main {
 
 footer {
   border-top: 2px solid rgba(153, 142, 142, 0.1);
+  margin-top: -10px;
   padding-top: 15px;
   font-size: 15px;
 }
