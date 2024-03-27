@@ -5,16 +5,7 @@ function showTemperature(response) {
   let description = document.querySelector("#condition");
   let time = document.querySelector("#time-date");
   let date = new Date(response.data.time * 1000);
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[date.getDay()];
+
   console.log(response.data);
 
   let currentTemperature = response.data.temperature.current;
@@ -27,7 +18,31 @@ function showTemperature(response) {
   windSpeed.innerHTML = `${currentWindSpeed}km/h`;
   description.innerHTML = response.data.condition.description;
 
-  time.innerHTML = `${day} ${date.getHours()}:${date.getMinutes()}`;
+  time.innerHTML = formateDate(date);
+}
+
+function formateDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[date.getDay()];
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${day} ${minutes}:${hours}`;
 }
 
 function updatedCity(city) {
