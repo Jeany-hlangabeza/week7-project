@@ -1,7 +1,18 @@
 function showTemperature(response) {
   let temperature = document.querySelector("#temperature");
+  let humidity = document.querySelector("#Humidity");
+  let windSpeed = document.querySelector("#windspeed");
+
+  console.log(response.data);
+
   let currentTemperature = response.data.temperature.current;
   temperature.innerHTML = Math.round(currentTemperature);
+
+  let currentHumidity = response.data.temperature.humidity;
+  humidity.innerHTML = `${currentHumidity}%`;
+
+  let currentWindSpeed = response.data.wind.speed;
+  windSpeed.innerHTML = `${currentWindSpeed}km/h`;
 }
 
 function updatedCity(city) {
@@ -20,3 +31,5 @@ function searchBox(event) {
 
 let cityForm = document.querySelector("#search-form");
 cityForm.addEventListener("submit", searchBox);
+
+updatedCity("paris");
