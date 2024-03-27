@@ -20,6 +20,7 @@ function showTemperature(response) {
   description.innerHTML = response.data.condition.description;
 
   time.innerHTML = formateDate(date);
+  icon.innerHTML = ` <img src= "${response.data.condition.icon_url}" />`;
 }
 
 function formateDate(date) {
@@ -43,7 +44,7 @@ function formateDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${minutes}:${hours}`;
+  return `${day} ${hours}:${minutes}`;
 }
 
 function updatedCity(city) {
