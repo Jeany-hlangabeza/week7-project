@@ -52,23 +52,23 @@ main {
 
 .temperature {
   position: relative;
-  left: 380px;
-  top: -60px;
-  font-size: 65px;
+  left: 315px;
+  top: -85px;
+  font-size: 73px;
   font-weight: bold;
 }
 
 .icon {
   position: relative;
-  left: 380px;
-  top: -66px;
-  font-size: 34px;
+  left: 328px;
+  top: -55px;
+  width: 2px;
 }
 
 .units {
   position: relative;
-  left: 375px;
-  top: -95px;
+  left: 310px;
+  top: -123px;
   font-size: 26px;
 }
 

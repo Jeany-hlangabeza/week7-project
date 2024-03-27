@@ -5,6 +5,7 @@ function showTemperature(response) {
   let description = document.querySelector("#condition");
   let time = document.querySelector("#time-date");
   let date = new Date(response.data.time * 1000);
+  let icon = document.querySelector("#icon");
 
   console.log(response.data);
 
