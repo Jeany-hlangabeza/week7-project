@@ -7,22 +7,23 @@ body {
 }
 
 .container {
-  border: 1px solid rgba(248, 247, 247, 0.2);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  background-color: rgba(248, 244, 244, 0.2);
-  border-radius: 6px;
+  border: 1px solid rgba(247, 227, 227, 0.4);
+  box-shadow: 2px 2px 4px rgba(27, 27, 27, 0.5);
+  background-color: rgba(153, 152, 152, 0.2);
+  border-radius: 8px;
   width: fit-content;
 
-  padding: 15px;
+  padding: 10px;
 
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 form {
-  padding-bottom: 15px;
+  padding-bottom: 8px;
+  justify-content: center;
 }
 .search-input {
-  width: 79%;
+  width: 80%;
   padding: 14px;
   border-style: none;
   border-radius: 6px;
@@ -30,14 +31,14 @@ form {
   font-size: 14px;
 }
 .submit-btn {
-  width: 100px;
+  width: 92px;
   padding: 12px;
-  background-color: rgb(236, 130, 236);
+  background-color: rgb(211, 92, 211);
   border-style: none;
   border-radius: 6px;
   color: whitesmoke;
   font-size: 17px;
-  margin-left: 4px;
+  margin-left: 2px;
 }
 
 main {
@@ -51,34 +52,62 @@ main {
 .details {
   color: rgb(90, 83, 83);
   font-weight: 500;
-  margin-bottom: -20px;
+  margin-bottom: -60px;
+  margin-top: -10px;
+  font-size: 16px;
+}
+
+.current-temperature {
+  position: relative;
+  left: 40px;
+  top: 10px;
 }
 
 .temperature {
   position: relative;
-  left: 315px;
-  top: -85px;
-  font-size: 73px;
+  left: 265px;
+  top: -25px;
+  font-size: 70px;
   font-weight: bold;
 }
 
 .icon {
   position: relative;
-  left: 328px;
-  top: -55px;
-  width: 2px;
+  left: 278px;
+  top: -8px;
 }
 
 .units {
   position: relative;
-  left: 310px;
-  top: -123px;
+  left: 260px;
+  top: -60px;
   font-size: 26px;
 }
 
+.weather-forecast {
+  justify-items: center;
+}
+
+.weather-forecast-day {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(3, 3, 3);
+  padding-bottom: 4px;
+}
+.weather-temperature {
+  font-size: 14px;
+  font-weight: 400;
+}
+.max-tempreature {
+  color: rgb(2, 2, 2);
+}
+.min-temperature {
+  opacity: 0.7;
+}
+
 footer {
+  margin-top: 12px;
   border-top: 2px solid rgba(153, 142, 142, 0.1);
-  margin-top: -25px;
-  padding-top: 15px;
-  font-size: 15px;
+  padding-top: 5px;
+  font-size: 14px;
 }
