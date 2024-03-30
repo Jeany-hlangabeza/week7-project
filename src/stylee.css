@@ -91,18 +91,16 @@ main {
 .weather-forecast-day {
   font-size: 16px;
   font-weight: 400;
-  color: rgb(3, 3, 3);
+  color: rgb(90, 83, 83);
   padding-bottom: 4px;
 }
 .weather-temperature {
   font-size: 14px;
   font-weight: 400;
+  color: rgb(236, 96, 119);
 }
 .max-tempreature {
-  color: rgb(2, 2, 2);
-}
-.min-temperature {
-  opacity: 0.7;
+  font-weight: bold;
 }
 
 footer {
