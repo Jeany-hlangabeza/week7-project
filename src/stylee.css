@@ -83,23 +83,22 @@ main {
   top: -60px;
   font-size: 26px;
 }
-
 .weather-forecast {
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
-
 .weather-forecast-day {
   font-size: 16px;
   font-weight: 400;
   color: rgb(90, 83, 83);
-  padding-bottom: 4px;
 }
-.weather-temperature {
+.weather-temprature {
   font-size: 14px;
   font-weight: 400;
   color: rgb(236, 96, 119);
 }
-.max-tempreature {
+.max-temprature {
   font-weight: bold;
 }
 
