@@ -64,17 +64,15 @@ function fetchForecast(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   let apiKey = `d34702155fe628t713faof5f645213cb`;
   axios.get(apiUrl).then(displayTemperature);
-  console.log(apiUrl);
 }
 
 function displayTemperature(response) {
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast-date">
-    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast-day">thur</div>
     <div class="image">⛅</div>
     <div class="weather-temprature">
       <div>
@@ -92,4 +90,3 @@ let cityForm = document.querySelector("#search-form");
 cityForm.addEventListener("submit", searchBox);
 
 updatedCity("paris");
-displayTemperature();
