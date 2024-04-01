@@ -11,6 +11,7 @@ body {
   box-shadow: 2px 2px 4px rgba(27, 27, 27, 0.5);
   background-color: rgba(153, 152, 152, 0.2);
   border-radius: 8px;
+  max-width: 78%;
   width: fit-content;
   padding: 10px;
   margin: 0 auto;
