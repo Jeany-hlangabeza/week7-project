@@ -70,12 +70,13 @@ function fetchForecast(city) {
 function displayTemperature(response) {
   console.log(response.data);
   let forecastHtml = "";
-  response.data.daily.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `<div class="weather-forecast-date">
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `<div class="weather-forecast-date">
     <div class="weather-forecast-day">Thu</div>
-    <div class="image"><img src = "${day.condition.icon_url}" width = 35/></div>
+    <div class="image"><img src = "${day.condition.icon_url}" width = 38/></div>
     <div class="weather-temprature">
       <div>
         <span class="max-temprature">${Math.round(
@@ -87,6 +88,7 @@ function displayTemperature(response) {
       </div>
     </div>
   </div>`;
+    }
   });
   let forecast = document.querySelector("#forecast");
   forecast.innerHTML = forecastHtml;
