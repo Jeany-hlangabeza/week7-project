@@ -68,17 +68,22 @@ function fetchForecast(city) {
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let forecastHtml = "";
   response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast-date">
     <div class="weather-forecast-day">Thu</div>
-    <div class="image">⛅</div>
+    <div class="image"><img src = "${day.condition.icon_url}" width = 35/></div>
     <div class="weather-temprature">
       <div>
-        <span class="max-temprature"> 18° </span>
-        <span class="min-temprature"> 13° </span>
+        <span class="max-temprature">${Math.round(
+          day.temperature.maximum
+        )}°</span>
+        <span class="min-temprature"> ${Math.round(
+          day.temperature.minimum
+        )}° </span>
       </div>
     </div>
   </div>`;
