@@ -19,7 +19,8 @@ function showTemperature(response) {
 
   time.innerHTML = formateDate(date);
   icon.innerHTML = ` <img src= "${response.data.condition.icon_url}" width="75"/>`;
-  displayTemperature(response.data.city);
+
+  fetchForecast(response.data.city);
 }
 
 function formateDate(date) {
@@ -61,8 +62,8 @@ function searchBox(event) {
 }
 
 function fetchForecast(city) {
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   let apiKey = `d34702155fe628t713faof5f645213cb`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
