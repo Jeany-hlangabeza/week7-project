@@ -72,7 +72,7 @@ function displayTemperature(response) {
     forecastHtml =
       forecastHtml +
       `<div class="weather-forecast-date">
-    <div class="weather-forecast-day">thur</div>
+    <div class="weather-forecast-day">Thu</div>
     <div class="image">⛅</div>
     <div class="weather-temprature">
       <div>
