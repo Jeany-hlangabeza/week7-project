@@ -59,7 +59,7 @@ main {
 .current-temperature {
   position: relative;
   left: 40px;
-  top: 15px;
+  top: 8px;
 }
 
 .temperature {
