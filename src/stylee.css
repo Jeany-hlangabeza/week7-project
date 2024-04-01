@@ -51,7 +51,7 @@ main {
 .details {
   color: rgb(90, 83, 83);
   font-weight: 500;
-  margin-bottom: -70px;
+  margin-bottom: -65px;
   margin-top: -10px;
   font-size: 16px;
 }
@@ -59,7 +59,7 @@ main {
 .current-temperature {
   position: relative;
   left: 40px;
-  top: 15pxpx;
+  top: 15px;
 }
 
 .temperature {
@@ -88,7 +88,7 @@ main {
   text-align: center;
 }
 .weather-forecast-day {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: rgb(90, 83, 83);
 }
