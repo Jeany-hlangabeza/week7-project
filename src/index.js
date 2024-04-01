@@ -18,7 +18,7 @@ function showTemperature(response) {
   description.innerHTML = response.data.condition.description;
 
   time.innerHTML = formateDate(date);
-  icon.innerHTML = ` <img src= "${response.data.condition.icon_url}" width="75"/>`;
+  icon.innerHTML = ` <img src= "${response.data.condition.icon_url}" width="85"/>`;
 
   fetchForecast(response.data.city);
 }
